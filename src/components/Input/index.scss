@@ -1,0 +1,136 @@
+.input {
+  z-index: 1;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  border-top: 1px solid #dedede;
+  display: flex;
+  padding: 6px 32px 6px 32px;
+  background: #FAFBFC;
+  &__wrapper {
+    width: 410px;
+    position: relative;
+    margin: 0 16px;
+
+  }
+  &__emoji-window {
+    transform: translateY(-100%);
+    top: -12px;
+    right: 0;
+    position: absolute;
+  }
+  &__hint {
+    transform: translateY(-100%);
+    top: -22px;
+    left: -7px;
+    position: absolute;
+  }
+  &__switch-mode {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+    svg {
+      width: 20px;
+      height: 20px;
+      fill: #828a99;
+    }
+    &_active {
+      svg {
+        fill: #729cff;
+      }
+    }
+    &_default {
+      svg {
+        fill: #828a99;
+      }
+    }
+  }
+  &__sent {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    margin-top: 6px;
+  }
+  &__field {
+    resize:none;
+    max-width: 100%;
+    font-family: SF Pro Text;
+    outline: none;
+    padding: 8px 36px 8px 9px;
+    font-size: 13px;
+    line-height: 18px;
+    overflow: hidden;
+
+    border-radius: 4px;
+    min-height: 38px;
+    a {
+      color: #729cff;
+    }
+    &_default {
+      border: 1px solid #C5D0DB;
+    }
+    &_view {
+      cursor: default;
+      border: 1px solid #729cff;
+    }
+    &_real {
+      z-index: 1;
+      display: inline-block;
+    }
+    &_false {
+      position: absolute;
+      display: inline-block;
+      z-index: 2;
+      word-wrap: break-word;
+      white-space: pre-wrap;
+      pointer-events: none;
+      height: 100%;
+      //background: #FFFFFF;
+      top: 0;
+      left: 0;
+      color: #000000;
+      background: none;
+    }
+    &_placeholder {
+      min-height: 100%;
+      display: inline-block;
+      z-index: 0;
+      word-wrap: break-word;
+      white-space: pre-wrap;
+      pointer-events: none;
+      opacity: 0;
+      color: #000000;
+      background: none;
+    }
+  }
+  &__emoji {
+    z-index: 10;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

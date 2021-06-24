@@ -1,0 +1,26 @@
+
+.hint {
+  font-family: SF Pro Text;
+  background: #FFFFFF;
+  z-index: 1;
+  border: 1px solid #C5D0DB;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  width: 290px;
+  &:after {
+    z-index: -1;
+    content: '';
+    background: #EBEEF2;
+    border-radius: 4px;
+    border: 1px solid #C5D0DB;
+    position: absolute;
+    transform: rotate(45deg);
+    height: 16px;
+    width: 16px;
+    left: 8px;
+    bottom: -4px;
+  }
+  &__text {
+    padding: 10px;
+  }
+}

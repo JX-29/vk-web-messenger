@@ -1,0 +1,16 @@
+.header {
+  z-index: 1;
+  position: absolute;
+  background: #FFFFFF;
+  top: 0;
+  width: 100%;
+  height: 48px;
+  border-bottom: 1px solid #dedede;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__username {
+    font-family: SF Pro Text;
+    font-weight: bold;
+  }
+}

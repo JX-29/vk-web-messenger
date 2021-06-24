@@ -1,0 +1,41 @@
+.messages {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+  height: 100%;
+  padding: 48px 0 51px 0;
+  &__body {
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+  }
+  &__empty {
+    position: absolute;
+    font-family: SF Pro Text;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+    color: #939393;
+  }
+  &__list {
+
+    width: 100%;
+    min-height: 100%;
+    list-style: none;
+    padding: 0 32px;
+  }
+  &__item {
+    color: #000000;
+    font-family: SF Pro Text;
+    padding: 8px 36px 8px 9px;
+    font-size: 13px;
+    line-height: 18px;
+    a {
+      color: #729cff;
+    }
+  }
+}
